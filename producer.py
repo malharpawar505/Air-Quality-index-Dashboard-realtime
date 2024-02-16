@@ -7,7 +7,7 @@ from kafka import KafkaProducer
 
 # Producer configuration
 bootstrap_servers = "localhost:9092"
-topic_name = "air-quality1"
+topic_name = "air_quality"
 
 # Open the CSV file
 with open("air_quality_index.csv", "r") as csvfile:
