@@ -7,7 +7,7 @@ kafka_df = spark \
   .readStream \
   .format("kafka") \
   .option("kafka.bootstrap.servers", bootstrap_servers) \
-  .option("subscribe", air-quality1) \
+  .option("subscribe", air-quality-1) \
   .load()
 # Add a timestamp to the data if it doesn't already have one
 if not "timestamp" in kafka_df.columns:
